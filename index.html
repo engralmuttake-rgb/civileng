@@ -1,1 +1,1070 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional CV of Al Muttake Ferdous, a Civil Engineer specializing in RCC and steel structural design, drafting, estimation, and construction supervision.">
+  <meta name="theme-color" content="#0d2338">
+  <meta property="og:title" content="Al Muttake Ferdous | Civil Engineer">
+  <meta property="og:description" content="Civil engineer with expertise in RCC, steel structures, drafting, estimation, and construction supervision.">
+  <title>Al Muttake Ferdous | Civil Engineer</title>
+  <style>
+    :root {
+      --navy-950: #081a2a;
+      --navy-900: #0d2338;
+      --navy-800: #153550;
+      --navy-700: #1e4962;
+      --ink: #172b3b;
+      --muted: #526a7d;
+      --muted-light: #9fb2c0;
+      --line: #d9e3ea;
+      --line-dark: rgba(255, 255, 255, .14);
+      --paper: #ffffff;
+      --canvas: #edf2f5;
+      --canvas-deep: #e4ebf0;
+      --accent: #c99451;
+      --accent-light: #f4e8d5;
+      --accent-dark: #7c511f;
+      --teal: #287e88;
+      --green: #4b9b79;
+      --shadow: 0 24px 70px rgba(19, 45, 65, .12);
+      --shadow-soft: 0 12px 32px rgba(19, 45, 65, .08);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 15px;
+      --content: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: "Segoe UI", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .45;
+      background-image:
+        linear-gradient(rgba(22, 55, 76, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(22, 55, 76, .035) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.75), transparent 70%);
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    ::selection { color: var(--navy-950); background: var(--accent-light); }
+
+    .container {
+      width: min(var(--content), calc(100% - 40px));
+      margin-inline: auto;
+    }
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      padding: 9px 14px;
+      color: var(--navy-950);
+      background: var(--accent);
+      border-radius: 9px;
+      transform: translateY(-160%);
+      transition: transform .2s ease;
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(237, 242, 245, .88);
+      border-bottom: 1px solid rgba(217, 227, 234, .8);
+      backdrop-filter: blur(18px);
+    }
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      flex: 0 0 auto;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      background: var(--navy-900);
+      border-radius: 13px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      box-shadow: 0 8px 18px rgba(13, 35, 56, .17);
+    }
+    .brand-copy { display: grid; line-height: 1.2; }
+    .brand-name { font-size: 14px; font-weight: 800; letter-spacing: .01em; }
+    .brand-role { margin-top: 3px; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: auto;
+    }
+    .nav-link {
+      position: relative;
+      padding: 9px 12px;
+      color: #526a7d;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 9px;
+      transition: color .2s ease, background .2s ease;
+    }
+    .nav-link:hover, .nav-link.active { color: var(--navy-900); background: rgba(255,255,255,.72); }
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 3px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 99px;
+    }
+    .nav-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: 10px;
+      padding: 10px 14px;
+      color: var(--paper);
+      background: var(--navy-900);
+      border: 1px solid var(--navy-900);
+      border-radius: 11px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 800;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .nav-print:hover { background: var(--navy-800); box-shadow: 0 8px 18px rgba(13,35,56,.16); transform: translateY(-1px); }
+    .nav-print svg, .btn svg { width: 15px; height: 15px; flex: 0 0 auto; }
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      color: var(--navy-900);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      cursor: pointer;
+    }
+    .menu-toggle svg { width: 19px; height: 19px; }
+
+    /* Hero */
+    .hero { padding: 28px 0 12px; }
+    .hero-panel {
+      position: relative;
+      min-height: 570px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(300px, .82fr);
+      gap: 24px;
+      overflow: hidden;
+      padding: 66px 70px;
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 86% 18%, rgba(201,148,81,.18), transparent 25%),
+        linear-gradient(135deg, var(--navy-900), var(--navy-950));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .2;
+      background-image:
+        linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(110deg, transparent 15%, #000 65%, transparent 100%);
+    }
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      right: -140px;
+      bottom: -180px;
+      z-index: -1;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba(201,148,81,.22);
+      border-radius: 50%;
+      box-shadow: 0 0 0 34px rgba(201,148,81,.035), 0 0 0 70px rgba(201,148,81,.025);
+    }
+    .hero-copy { position: relative; z-index: 1; align-self: center; max-width: 670px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 22px;
+      color: #d5e0e8;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .eyebrow-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 0 5px rgba(201,148,81,.16); }
+    .hero h1 {
+      max-width: 680px;
+      margin: 0;
+      color: var(--paper);
+      font-size: clamp(3.2rem, 7.2vw, 6.35rem);
+      font-weight: 800;
+      letter-spacing: -.075em;
+      line-height: .94;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero-role {
+      margin: 25px 0 0;
+      color: #c5d3dd;
+      font-size: clamp(1rem, 1.7vw, 1.2rem);
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .hero-role .slash { margin: 0 8px; color: var(--accent); }
+    .hero-intro {
+      max-width: 600px;
+      margin: 19px 0 0;
+      color: #b6c8d4;
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 31px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 46px;
+      padding: 0 17px;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: var(--navy-950); background: var(--accent); box-shadow: 0 10px 22px rgba(201,148,81,.2); }
+    .btn-primary:hover { background: #d8a665; box-shadow: 0 13px 25px rgba(201,148,81,.28); }
+    .btn-ghost { color: #e4edf2; background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); }
+    .btn-ghost:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.38); }
+    .contact-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 18px;
+      max-width: 610px;
+      margin: 35px 0 0;
+      padding: 22px 0 0;
+      border-top: 1px solid var(--line-dark);
+    }
+    .contact-item { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .contact-icon {
+      width: 31px;
+      height: 31px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      color: var(--accent);
+      background: rgba(201,148,81,.12);
+      border: 1px solid rgba(201,148,81,.2);
+      border-radius: 9px;
+    }
+    .contact-icon svg { width: 15px; height: 15px; }
+    .contact-label { display: block; margin-bottom: 1px; color: #91a9b8; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-value { display: block; overflow: hidden; color: #e4edf2; font-size: 13px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+    .contact-value:hover { color: var(--accent); }
+    .hero-portrait { position: relative; display: flex; align-items: center; justify-content: center; min-height: 430px; }
+    .portrait-frame {
+      position: relative;
+      width: min(305px, 83%);
+      aspect-ratio: 214 / 276;
+      padding: 11px;
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 18px;
+      box-shadow: 20px 26px 0 rgba(201,148,81,.17), 0 30px 60px rgba(0,0,0,.27);
+      transform: rotate(2.2deg);
+    }
+    .portrait-frame::before {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      z-index: 1;
+      pointer-events: none;
+      border: 1px solid rgba(13,35,56,.12);
+      border-radius: 12px;
+    }
+    .portrait-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; filter: saturate(.92) contrast(1.02); }
+    .portrait-label {
+      position: absolute;
+      right: 1px;
+      bottom: 22px;
+      padding: 11px 15px;
+      color: var(--navy-950);
+      background: var(--accent);
+      border-radius: 12px 0 0 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.18);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .portrait-stamp {
+      position: absolute;
+      top: 25px;
+      left: 4px;
+      width: 92px;
+      height: 92px;
+      display: grid;
+      place-items: center;
+      color: rgba(201,148,81,.85);
+      border: 1px solid rgba(201,148,81,.55);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      line-height: 1.3;
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(-12deg);
+    }
+    .hero-focus {
+      position: relative;
+      z-index: 1;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      align-self: end;
+      margin-top: 12px;
+      overflow: hidden;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 14px;
+    }
+    .focus-item { padding: 13px 17px; background: rgba(8,26,42,.26); }
+    .focus-item span { display: block; color: #8fa7b7; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .focus-item strong { display: block; margin-top: 3px; color: #edf4f7; font-size: 13px; }
+
+    /* Shared sections */
+    .section { margin-top: 72px; scroll-margin-top: 96px; }
+    .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+    .section-heading h2 { margin: 0; color: var(--navy-900); font-size: clamp(1.65rem, 3vw, 2.25rem); letter-spacing: -.045em; line-height: 1.1; }
+    .section-heading p { max-width: 470px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
+    .section-number { display: block; margin-bottom: 6px; color: var(--accent-dark); font-size: 11px; font-weight: 900; letter-spacing: .2em; }
+    .card { background: var(--paper); border: 1px solid rgba(217,227,234,.95); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
+    .card-pad { padding: 27px 29px; }
+    .card-title { display: flex; align-items: center; gap: 11px; margin: 0 0 15px; color: var(--navy-900); font-size: 16px; letter-spacing: -.01em; }
+    .card-title .title-mark { width: 24px; height: 3px; flex: 0 0 auto; background: var(--accent); border-radius: 99px; }
+    .muted { color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: minmax(0, 1.42fr) minmax(270px, .58fr); gap: 20px; }
+    .about-copy { margin: 0; color: #42586a; font-size: 1.04rem; line-height: 1.85; }
+    .about-copy strong { color: var(--navy-900); }
+    .glance-card { color: var(--paper); background: linear-gradient(145deg, var(--navy-800), var(--navy-900)); border-color: transparent; }
+    .glance-card .card-title { color: var(--paper); }
+    .glance-list { display: grid; gap: 17px; margin: 0; }
+    .glance-item { display: grid; grid-template-columns: 31px 1fr; gap: 11px; align-items: start; }
+    .glance-icon { width: 31px; height: 31px; display: grid; place-items: center; color: var(--accent); background: rgba(201,148,81,.13); border-radius: 9px; }
+    .glance-icon svg { width: 15px; height: 15px; }
+    .glance-item .glance-label { color: #a4bac8; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .glance-item .glance-value { display: block; margin-top: 2px; color: #f2f6f8; font-size: 13px; font-weight: 700; }
+
+    /* Experience */
+    .timeline { position: relative; display: grid; gap: 17px; }
+    .timeline::before { content: ""; position: absolute; top: 18px; bottom: 18px; left: 18px; width: 1px; background: #c8d6df; }
+    .role { position: relative; display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 17px; }
+    .role-marker { position: relative; z-index: 1; width: 37px; height: 37px; display: grid; place-items: center; color: var(--paper); background: var(--navy-900); border: 5px solid var(--canvas); border-radius: 50%; box-shadow: 0 0 0 1px #c5d4de; }
+    .role-marker svg { width: 14px; height: 14px; }
+    .role-card { padding: 23px 26px 24px; transition: transform .2s ease, box-shadow .2s ease; }
+    .role-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .role-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+    .role h3 { margin: 0; color: var(--navy-900); font-size: 18px; letter-spacing: -.02em; line-height: 1.25; }
+    .role-company { display: inline-block; margin-top: 5px; color: var(--teal); font-size: 13px; font-weight: 800; }
+    .role-date { flex: 0 0 auto; padding: 7px 10px; color: var(--accent-dark); background: var(--accent-light); border: 1px solid #ead8bb; border-radius: 8px; font-size: 11px; font-weight: 900; white-space: nowrap; }
+    .role-list { display: grid; gap: 8px; margin: 17px 0 0; padding: 0; list-style: none; }
+    .role-list li { position: relative; padding-left: 19px; color: #53697a; font-size: 13px; line-height: 1.65; }
+    .role-list li::before { content: ""; position: absolute; top: .65em; left: 0; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+
+    /* Expertise */
+    .expertise-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 20px; }
+    .skill-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .skill-item { padding: 15px 16px; background: #f7fafb; border: 1px solid var(--line); border-radius: 13px; }
+    .skill-item strong { display: block; color: var(--navy-900); font-size: 13px; }
+    .skill-item span { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .focus-card { color: var(--paper); background: var(--navy-900); border-color: transparent; }
+    .focus-card .card-title { color: var(--paper); }
+    .focus-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+    .focus-list li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; color: #d1dfe7; font-size: 13px; line-height: 1.55; }
+    .focus-list li::before { content: "↗"; width: 22px; height: 22px; display: grid; place-items: center; color: var(--navy-950); background: var(--accent); border-radius: 7px; font-size: 12px; font-weight: 900; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 21px; }
+    .tag { padding: 6px 10px; color: #456070; background: #eef3f6; border: 1px solid var(--line); border-radius: 99px; font-size: 11px; font-weight: 800; }
+
+    /* Education */
+    .education-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .education-card { position: relative; overflow: hidden; padding: 25px 24px 24px; }
+    .education-card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--accent); }
+    .education-card:nth-child(2)::before { background: var(--teal); }
+    .education-card:nth-child(3)::before { background: #7894a4; }
+    .education-date { display: inline-block; margin-bottom: 16px; color: var(--accent-dark); font-size: 11px; font-weight: 900; letter-spacing: .08em; }
+    .education-card:nth-child(2) .education-date { color: var(--teal); }
+    .education-card:nth-child(3) .education-date { color: #5d7889; }
+    .education-card h3 { min-height: 48px; margin: 0; color: var(--navy-900); font-size: 17px; line-height: 1.4; letter-spacing: -.02em; }
+    .education-card .institution { min-height: 46px; margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .education-detail { display: flex; align-items: flex-start; gap: 8px; margin-top: 15px; padding-top: 14px; border-top: 1px solid var(--line); color: #506878; font-size: 12px; }
+    .education-detail strong { color: var(--navy-900); }
+    .education-detail svg { width: 15px; height: 15px; flex: 0 0 auto; margin-top: 2px; color: var(--accent); }
+
+    /* Highlights */
+    .highlight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .highlight-card { padding: 25px 26px; }
+    .highlight-card ul { display: grid; gap: 13px; margin: 0; padding: 0; list-style: none; }
+    .highlight-card li { position: relative; padding-left: 23px; color: #526979; font-size: 13px; line-height: 1.65; }
+    .highlight-card li::before { content: ""; position: absolute; top: .58em; left: 0; width: 8px; height: 8px; background: var(--teal); border-radius: 2px 50% 50% 50%; transform: rotate(45deg); }
+    .highlight-card li strong { color: var(--navy-900); }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; color: #426071; background: #f1f6f7; border: 1px solid #d9e8e9; border-radius: 9px; font-size: 11px; font-weight: 800; }
+    .badge svg { width: 13px; height: 13px; color: var(--teal); }
+
+    /* Details and references */
+    .details-grid { display: grid; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: 20px; }
+    .personal-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; margin: 0; }
+    .personal-list div { padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .personal-list dt { color: var(--muted); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+    .personal-list dd { margin: 4px 0 0; color: var(--navy-900); font-size: 13px; font-weight: 700; }
+    .personal-list .wide { grid-column: 1 / -1; }
+    .reference-grid { display: grid; gap: 11px; }
+    .reference-card { display: grid; grid-template-columns: 42px 1fr; gap: 13px; align-items: start; padding: 16px; background: #f8fafb; border: 1px solid var(--line); border-radius: 14px; }
+    .reference-avatar { width: 42px; height: 42px; display: grid; place-items: center; color: var(--paper); background: var(--navy-800); border-radius: 12px; font-size: 13px; font-weight: 900; }
+    .reference-card h3 { margin: 0; color: var(--navy-900); font-size: 14px; }
+    .reference-role { margin: 2px 0 8px; color: var(--teal); font-size: 11px; font-weight: 800; }
+    .reference-meta { display: flex; flex-wrap: wrap; gap: 7px 15px; color: var(--muted); font-size: 11px; }
+    .reference-meta a:hover { color: var(--accent-dark); }
+
+    /* Declaration */
+    .declaration {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 230px;
+      gap: 28px;
+      align-items: center;
+      padding: 30px 32px;
+      color: var(--paper);
+      background: var(--navy-900);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+    }
+    .declaration::after { content: ""; position: absolute; right: 40px; top: -90px; width: 220px; height: 220px; border: 1px solid rgba(201,148,81,.2); border-radius: 50%; box-shadow: 0 0 0 22px rgba(201,148,81,.04); }
+    .declaration h2 { margin: 0 0 9px; color: var(--paper); font-size: 19px; }
+    .declaration p { max-width: 750px; margin: 0; color: #b9cad5; font-size: 13px; line-height: 1.8; }
+    .declaration-sign { position: relative; z-index: 1; justify-self: end; width: 100%; padding-left: 25px; border-left: 1px solid var(--line-dark); }
+    .sign-line { display: block; width: 150px; padding-bottom: 7px; border-bottom: 1px solid rgba(255,255,255,.45); color: #eaf1f4; font-family: "Segoe Script", "Bradley Hand", cursive; font-size: 21px; transform: rotate(-5deg); }
+    .sign-label { display: block; margin-top: 8px; color: #91a9b8; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+
+    footer { margin: 44px 0 30px; padding-top: 18px; color: #526a7d; border-top: 1px solid var(--line); font-size: 11px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .footer-inner strong { color: var(--navy-900); }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .nav-links { gap: 0; }
+      .nav-link { padding-inline: 8px; font-size: 12px; }
+      .hero-panel { padding: 52px 46px; }
+      .about-grid, .expertise-grid, .details-grid { grid-template-columns: 1fr; }
+      .education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .education-card:last-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 760px) {
+      .container { width: min(var(--content), calc(100% - 28px)); }
+      .site-header { position: relative; }
+      .nav { min-height: 68px; }
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-print { display: none; }
+      .nav-links { position: absolute; top: calc(100% + 1px); left: 14px; right: 14px; display: none; flex-direction: column; align-items: stretch; gap: 3px; padding: 9px; background: rgba(255,255,255,.98); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+      .nav-links.open { display: flex; }
+      .nav-link { padding: 10px 12px; }
+      .nav-link.active::after { left: 12px; right: auto; width: 3px; height: 18px; top: 9px; bottom: auto; border-radius: 99px; }
+      .hero { padding-top: 15px; }
+      .hero-panel { display: block; min-height: 0; padding: 39px 25px 25px; border-radius: 23px; }
+      .hero h1 { font-size: clamp(3.05rem, 16vw, 5.2rem); }
+      .hero-intro { font-size: .95rem; }
+      .contact-list { grid-template-columns: 1fr; gap: 11px; }
+      .hero-portrait { min-height: 350px; margin: 28px 0 20px; }
+      .portrait-frame { width: min(255px, 70%); }
+      .portrait-stamp { left: 4%; top: 3px; }
+      .hero-focus { grid-template-columns: 1fr; }
+      .focus-item { padding: 12px 15px; }
+      .section { margin-top: 51px; scroll-margin-top: 20px; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 8px; text-align: left; }
+      .card-pad { padding: 22px 20px; }
+      .role { grid-template-columns: 27px minmax(0, 1fr); gap: 11px; }
+      .timeline::before { left: 13px; }
+      .role-marker { width: 27px; height: 27px; border-width: 4px; }
+      .role-marker svg { width: 11px; height: 11px; }
+      .role-card { padding: 19px 17px 20px; }
+      .role-top { display: block; }
+      .role-date { display: inline-block; margin-top: 11px; }
+      .skill-grid, .education-grid, .highlight-grid { grid-template-columns: 1fr; }
+      .education-card:last-child { grid-column: auto; }
+      .education-card h3, .education-card .institution { min-height: 0; }
+      .personal-list { grid-template-columns: 1fr; }
+      .personal-list .wide { grid-column: auto; }
+      .declaration { grid-template-columns: 1fr; padding: 24px 20px; }
+      .declaration-sign { justify-self: start; padding: 18px 0 0; border-top: 1px solid var(--line-dark); border-left: 0; }
+      .footer-inner { display: block; }
+      .footer-inner span { display: block; margin-top: 5px; }
+    }
+    @media (max-width: 420px) {
+      .brand-copy { display: none; }
+      .hero-actions { display: grid; }
+      .btn { width: 100%; }
+      .reference-meta { display: grid; gap: 4px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+
+    /* Print-friendly CV */
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { background: #fff; color: #111; font-size: 10pt; }
+      body::before, .site-header, .hero-actions, .no-print { display: none !important; }
+      .container { width: 100%; max-width: none; }
+      .hero { padding: 0; }
+      .hero-panel { display: grid; grid-template-columns: 1fr 155px; min-height: 0; padding: 22px; color: #111; background: #fff; border: 1px solid #b9c5cc; border-radius: 0; box-shadow: none; }
+      .hero-panel::before, .hero-panel::after { display: none; }
+      .hero h1, .hero-role, .hero-intro, .contact-value, .focus-item strong { color: #111; }
+      .hero h1 { font-size: 35pt; }
+      .hero-role { font-size: 12pt; }
+      .hero-intro { color: #344b5a; font-size: 9pt; }
+      .eyebrow, .contact-label, .focus-item span { color: #526979; }
+      .contact-list { margin-top: 15px; padding-top: 12px; border-color: #cdd8de; }
+      .hero-portrait { min-height: 180px; }
+      .portrait-frame { width: 125px; box-shadow: none; transform: none; }
+      .portrait-label, .portrait-stamp { display: none; }
+      .hero-focus { margin-top: 15px; background: #dce6ea; border-color: #c5d2d8; }
+      .focus-item { padding: 8px 10px; background: #f4f7f8; }
+      .section { margin-top: 18px; }
+      .section-heading { margin-bottom: 10px; padding-bottom: 7px; }
+      .section-heading h2 { font-size: 16pt; }
+      .section-heading p, .section-number { font-size: 8pt; }
+      .card, .role-card, .highlight-card, .education-card { box-shadow: none; border-color: #d0d9df; }
+      .card-pad, .highlight-card { padding: 12px 14px; }
+      .about-grid, .expertise-grid, .details-grid { grid-template-columns: 1fr; gap: 10px; }
+      .glance-card, .focus-card, .declaration { color: #111; background: #f2f5f6; }
+      .glance-card .card-title, .focus-card .card-title, .declaration h2 { color: #111; }
+      .glance-item .glance-label, .contact-label, .focus-item span { color: #526979; }
+      .glance-item .glance-value, .focus-list li, .declaration p { color: #344b5a; }
+      .timeline { gap: 9px; }
+      .timeline::before { background: #c8d6df; }
+      .role { grid-template-columns: 25px 1fr; gap: 9px; }
+      .role-marker { width: 25px; height: 25px; border-width: 3px; color: #fff; }
+      .role-card { padding: 10px 12px; break-inside: avoid; }
+      .role h3 { font-size: 11pt; }
+      .role-company, .role-date { font-size: 8pt; }
+      .role-list { gap: 3px; margin-top: 7px; }
+      .role-list li { font-size: 8.5pt; }
+      .education-grid, .highlight-grid { grid-template-columns: repeat(3, 1fr); gap: 9px; }
+      .highlight-grid { grid-template-columns: 1fr 1fr; }
+      .education-card, .highlight-card { padding: 10px 12px; break-inside: avoid; }
+      .education-date { margin-bottom: 6px; font-size: 8pt; }
+      .education-card h3 { min-height: 0; font-size: 10pt; }
+      .education-card .institution { min-height: 0; font-size: 8pt; }
+      .education-detail { margin-top: 7px; padding-top: 7px; font-size: 8pt; }
+      .highlight-card ul { gap: 5px; }
+      .highlight-card li { font-size: 8.5pt; }
+      .personal-list { gap: 0 10px; }
+      .personal-list div { padding: 6px 0; }
+      .personal-list dt { font-size: 7pt; }
+      .personal-list dd { font-size: 8.5pt; }
+      .reference-grid { gap: 6px; }
+      .reference-card { padding: 8px; }
+      .reference-card h3 { font-size: 9pt; }
+      .reference-role, .reference-meta { font-size: 7.5pt; }
+      .declaration { grid-template-columns: 1fr 150px; padding: 13px 15px; }
+      .declaration p { font-size: 8pt; }
+      .declaration-sign { border-color: #cdd8de; }
+      .sign-line { color: #111; border-color: #7b8e9c; font-size: 15pt; }
+      .sign-label { color: #526979; font-size: 7pt; }
+      footer { margin-top: 14px; padding-top: 7px; font-size: 7pt; }
+      a { color: inherit; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Al Muttake Ferdous",
+    "jobTitle": "Civil Engineer",
+    "email": "mailto:Engr.almuttake@gmail.com",
+    "telephone": "+8801571277996",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gazipur",
+      "addressCountry": "BD"
+    },
+    "alumniOf": [
+      "IUBAT International University of Business Agriculture and Technology",
+      "Mymensingh Polytechnic Institute"
+    ],
+    "knowsAbout": [
+      "RCC structural design",
+      "Steel structural design",
+      "AutoCAD",
+      "Tekla Structures",
+      "SketchUp",
+      "Quantity estimation",
+      "Construction supervision"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">AMF</span>
+        <span class="brand-copy">
+          <span class="brand-name">Al Muttake Ferdous</span>
+          <span class="brand-role">Civil Engineer</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="site-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#about">Profile</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#expertise">Expertise</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#highlights">Highlights</a>
+        <a class="nav-link" href="#details">Details</a>
+      </nav>
+
+      <button class="nav-print no-print" type="button" data-print>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/><path d="M17.5 12h.01"/></svg>
+        Print CV
+      </button>
+      <button class="menu-toggle no-print" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Civil Engineer · Gazipur, Bangladesh</p>
+            <h1 id="hero-title">Al Muttake<br><span>Ferdous</span></h1>
+            <p class="hero-role">RCC &amp; Steel Structural Design <span class="slash">/</span> Construction Supervision</p>
+            <p class="hero-intro">Detail-focused civil engineer with experience across structural design, quantity estimation, drafting, and site supervision — building practical, well-coordinated solutions from concept to completion.</p>
+
+            <div class="hero-actions no-print">
+              <a class="btn btn-primary" href="#experience">
+                View experience
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <button class="btn btn-ghost" type="button" data-print>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/><path d="M17.5 12h.01"/></svg>
+                Print / save PDF
+              </button>
+            </div>
+
+            <div class="contact-list" aria-label="Contact information">
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span><span class="contact-label">Phone</span><a class="contact-value" href="tel:+8801571277996">+880 1571 277996</a></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span><span class="contact-label">Alternate</span><a class="contact-value" href="tel:+8801973634180">+880 1973 634180</a></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg></span>
+                <span><span class="contact-label">Email</span><a class="contact-value" href="mailto:Engr.almuttake@gmail.com">Engr.almuttake@gmail.com</a></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <span><span class="contact-label">Location</span><span class="contact-value">Chandona, Gazipur Sadar</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-portrait" aria-label="Portrait of Al Muttake Ferdous">
+            <div class="portrait-stamp" aria-hidden="true">Civil<br>Engineer</div>
+            <div class="portrait-frame">
+              <img src="data:image/jpeg;base64,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" alt="Al Muttake Ferdous, Civil Engineer">
+            </div>
+            <span class="portrait-label">Profile</span>
+          </div>
+
+          <div class="hero-focus" aria-label="Professional focus">
+            <div class="focus-item"><span>Core expertise</span><strong>RCC · Steel · Structural drafting</strong></div>
+            <div class="focus-item"><span>Professional focus</span><strong>Design · Estimation · Supervision</strong></div>
+            <div class="focus-item"><span>Languages</span><strong>Bengali · English</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">01 / Profile</span><h2 id="about-title">Professional profile</h2></div>
+          <p>A concise overview of my approach to civil engineering, project delivery, and professional growth.</p>
+        </div>
+        <div class="about-grid">
+          <article class="card card-pad">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Career objective</h3>
+            <p class="about-copy">I am a <strong>Civil Engineer</strong> with strong expertise in <strong>RCC and steel structural drafting</strong>, quantity estimation, and construction supervision. Proficient in <strong>AutoCAD, ETABS, Tekla Structures, SketchUp, and MS Office</strong>, with proven experience in material testing, project estimation, and quality control. I have successfully collaborated with consultancy firms, contractors, and developers to deliver projects on time and within budget. Moving forward, I aim to leverage my technical skills and professional experience to contribute to larger and more challenging projects.</p>
+            <div class="tag-row" aria-label="Professional focus areas">
+              <span class="tag">Structural design</span>
+              <span class="tag">Quantity estimation</span>
+              <span class="tag">Construction supervision</span>
+              <span class="tag">Quality &amp; safety</span>
+            </div>
+          </article>
+          <aside class="card card-pad glance-card" aria-label="Professional snapshot">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>At a glance</h3>
+            <div class="glance-list">
+              <div class="glance-item"><span class="glance-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 6h8M8 10h8M8 14h5"/></svg></span><span><span class="glance-label">Education</span><span class="glance-value">BSc in Civil Engineering</span></span></div>
+              <div class="glance-item"><span class="glance-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span><span class="glance-label">Membership</span><span class="glance-value">AMIEB since 2025</span></span></div>
+              <div class="glance-item"><span class="glance-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span><span><span class="glance-label">Software</span><span class="glance-value">AutoCAD · Tekla · SketchUp</span></span></div>
+              <div class="glance-item"><span class="glance-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-4.35 7-10V5l-7-3-7 3v6c0 5.65 7 10 7 10z"/><path d="m9 12 2 2 4-4"/></svg></span><span><span class="glance-label">Professional identity</span><span class="glance-value">Detail-oriented &amp; collaborative</span></span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">02 / Experience</span><h2 id="experience-title">Professional experience</h2></div>
+          <p>Hands-on experience spanning design, documentation, estimation, and construction delivery.</p>
+        </div>
+        <div class="timeline">
+          <article class="role">
+            <span class="role-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+            <div class="card role-card">
+              <div class="role-top">
+                <div><h3>Engineer</h3><span class="role-company">Sunbird Building Technologies</span></div>
+                <span class="role-date">Jan 2024 — Present</span>
+              </div>
+              <ul class="role-list">
+                <li>Drafting RCC and steel building drawings, including Pouroshova DIT sheets.</li>
+                <li>Preparing RCC and steel BOQ, project quotations, offers, and project bills.</li>
+                <li>Preparing actual estimates and bank estimates.</li>
+                <li>Supervising RCC and finishing works.</li>
+                <li>Ensuring quality control and safety management during pre-construction phases.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role">
+            <span class="role-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+            <div class="card role-card">
+              <div class="role-top">
+                <div><h3>Design Engineer</h3><span class="role-company">Buildup Consultancy Ltd.</span></div>
+                <span class="role-date">Jan 2023 — Dec 2023</span>
+              </div>
+              <ul class="role-list">
+                <li>RCC building design and drafting, including Pouroshova DIT sheets.</li>
+                <li>Preparing actual estimates and bank estimates.</li>
+                <li>Supervising RCC and finishing works.</li>
+                <li>Ensuring quality control and safety during construction.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role">
+            <span class="role-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+            <div class="card role-card">
+              <div class="role-top">
+                <div><h3>Trainee Engineer</h3><span class="role-company">Volume Zero Ltd.</span></div>
+                <span class="role-date">Sep 2022 — Dec 2022</span>
+              </div>
+              <ul class="role-list">
+                <li>Supervising RCC work and finishing work.</li>
+                <li>Ensuring quality control and safety management during pre-construction and review activities.</li>
+                <li>Estimating materials, equipment, and labor needed for construction activities and securing resources required to facilitate project completion and delivery.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role">
+            <span class="role-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+            <div class="card role-card">
+              <div class="role-top">
+                <div><h3>Engineer</h3><span class="role-company">Design Center</span></div>
+                <span class="role-date">May 2018 — Dec 2018</span>
+              </div>
+              <ul class="role-list">
+                <li>Worked as an AutoCAD engineer, preparing site reports, drawings, and designs.</li>
+                <li>Estimated RCC works.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">03 / Expertise</span><h2 id="expertise-title">Technical capabilities</h2></div>
+          <p>Tools and technical practices used to support accurate, coordinated project delivery.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="card card-pad">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Core software &amp; skills</h3>
+            <div class="skill-grid">
+              <div class="skill-item"><strong>AutoCAD</strong><span>2D drafting and design documentation</span></div>
+              <div class="skill-item"><strong>Tekla Structures</strong><span>Steel structural drafting</span></div>
+              <div class="skill-item"><strong>SketchUp</strong><span>3D visualization and modeling</span></div>
+              <div class="skill-item"><strong>MS Office</strong><span>Professional documentation and coordination</span></div>
+              <div class="skill-item"><strong>ETABS</strong><span>Structural analysis and design</span></div>
+              <div class="skill-item"><strong>BOQ &amp; Estimation</strong><span>Project costing and documentation</span></div>
+              <div class="skill-item"><strong>Material Testing</strong><span>Quality-focused material evaluation</span></div>
+              <div class="skill-item"><strong>Site Supervision</strong><span>RCC, finishing, quality, and safety</span></div>
+            </div>
+            <div class="tag-row" aria-label="Additional technical areas">
+              <span class="tag">RCC design</span><span class="tag">Steel structures</span><span class="tag">DIT sheets</span><span class="tag">Project bills</span>
+            </div>
+          </article>
+          <article class="card card-pad focus-card">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>What I bring</h3>
+            <ul class="focus-list">
+              <li>Clear, buildable technical documentation for RCC and steel structures.</li>
+              <li>Estimation and BOQ support that connects drawings with project cost.</li>
+              <li>Site awareness across pre-construction, RCC, and finishing activities.</li>
+              <li>Quality control and safety-minded coordination with project teams.</li>
+              <li>A collaborative approach with consultants, contractors, and developers.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">04 / Education</span><h2 id="education-title">Academic background</h2></div>
+          <p>Formal education in civil engineering, civil technology, and science.</p>
+        </div>
+        <div class="education-grid">
+          <article class="card education-card">
+            <span class="education-date">2019 — 2022</span>
+            <h3>Bachelor of Science in Civil Engineering</h3>
+            <p class="institution">IUBAT International University of Business Agriculture and Technology — Dhaka, Bangladesh</p>
+            <div class="education-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><strong>CGPA: 3.67</strong> out of 4.00</span></div>
+            <div class="education-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5"/></svg><span><strong>Thesis:</strong> Suitability analysis of waste asphalt aggregate in sub-base layer.</span></div>
+          </article>
+          <article class="card education-card">
+            <span class="education-date">2013 — 2017</span>
+            <h3>Diploma in Civil Technology</h3>
+            <p class="institution">Mymensingh Polytechnic Institute — Mymensingh, Bangladesh</p>
+            <div class="education-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><strong>CGPA: 3.40</strong> out of 4.00</span></div>
+          </article>
+          <article class="card education-card">
+            <span class="education-date">2012 — 2013</span>
+            <h3>Secondary School Certificate (SSC) — Science</h3>
+            <p class="institution">M. E. H. Arif College (School Section) — Gazipur, Dhaka, Bangladesh</p>
+            <div class="education-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3z"/></svg><span><strong>GPA: 4.75</strong> out of 5.00</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">05 / Highlights</span><h2 id="highlights-title">Beyond the classroom</h2></div>
+          <p>Academic recognition, professional affiliation, service, and communication strengths.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="card highlight-card">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Academic achievement</h3>
+            <ul>
+              <li><strong>Merit Scholarship</strong> from Mymensingh Polytechnic Institute for academic performance, 2013–2017.</li>
+              <li><strong>Merit Scholarship</strong> from IUBAT for academic performance, 2019–2022.</li>
+            </ul>
+            <div class="badge-row"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3z"/></svg>Academic excellence</span></div>
+          </article>
+          <article class="card highlight-card">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Membership &amp; activities</h3>
+            <ul>
+              <li><strong>Associate Member of IEB (AMIEB)</strong> since 2025.</li>
+              <li><strong>General Member</strong> of ICES — IUBAT Civil Engineering Society, 2019–2022.</li>
+              <li><strong>Vice President</strong> of GSA — Gazipur Student Association, 2021–2022.</li>
+              <li>Participated in social campaigning and community-minded activities.</li>
+            </ul>
+          </article>
+          <article class="card highlight-card">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Language proficiency</h3>
+            <ul>
+              <li><strong>Bengali:</strong> Native language.</li>
+              <li><strong>English:</strong> Proficiency in writing, reading, speaking, and listening.</li>
+            </ul>
+            <div class="badge-row"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Communication</span><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3z"/></svg> bilingual</span></div>
+          </article>
+          <article class="card highlight-card">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Professional values</h3>
+            <ul>
+              <li>Clear communication across consultants, contractors, developers, and site teams.</li>
+              <li>Quality-focused mindset with attention to safety and constructability.</li>
+              <li>Commitment to timely delivery, accurate documentation, and continuous learning.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details" aria-labelledby="details-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">06 / Details</span><h2 id="details-title">Personal information &amp; references</h2></div>
+          <p>Additional information and professional contacts as recorded in the CV.</p>
+        </div>
+        <div class="details-grid">
+          <article class="card card-pad">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>Personal information</h3>
+            <dl class="personal-list">
+              <div><dt>Full name</dt><dd>Al Muttake Ferdous</dd></div>
+              <div><dt>Father's name</dt><dd>Moksedul Hoque</dd></div>
+              <div><dt>Mother's name</dt><dd>Rezoana Hoque</dd></div>
+              <div><dt>Date of birth</dt><dd>April 25, 1997</dd></div>
+              <div><dt>Gender</dt><dd>Male</dd></div>
+              <div><dt>Nationality</dt><dd>Bangladeshi (by birth)</dd></div>
+              <div class="wide"><dt>Permanent address</dt><dd>Vill–Talipara, P.O.–Chandona, Thana–Gazipur Sadar, Dist.–Gazipur</dd></div>
+            </dl>
+          </article>
+
+          <article class="card card-pad">
+            <h3 class="card-title"><span class="title-mark" aria-hidden="true"></span>References</h3>
+            <div class="reference-grid">
+              <div class="reference-card">
+                <span class="reference-avatar" aria-hidden="true">FR</span>
+                <div>
+                  <h3>Engr. Fazle Rabbi</h3>
+                  <p class="reference-role">Structural Engineer · BSc in Civil, KUET · MIEB</p>
+                  <div class="reference-meta"><a href="tel:+8801521454451">Phone: +880 1521 454451</a><a href="mailto:rabbi.tulon@gmail.com">rabbi.tulon@gmail.com</a></div>
+                </div>
+              </div>
+              <div class="reference-card">
+                <span class="reference-avatar" aria-hidden="true">NH</span>
+                <div>
+                  <h3>Dr. Noor Md. Sadiqul Hasan</h3>
+                  <p class="reference-role">Associate Professor · Department of Civil Engineering, IUBAT</p>
+                  <div class="reference-meta"><a href="tel:+8801725786186">Phone: +880 1725 786186</a><a href="mailto:nmshasan@iubat.edu">nmshasan@iubat.edu</a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="declaration" aria-labelledby="declaration-title">
+      <div class="container">
+        <div class="declaration">
+          <div>
+            <h2 id="declaration-title">Declaration</h2>
+            <p>I, the undersigned, certify that, to the best of my knowledge and belief, this information correctly describes me, my qualifications, and my experience. I understand that any wilful misstatement herein may lead to disqualification or dismissal if employed.</p>
+          </div>
+          <div class="declaration-sign" aria-label="Signature: Al Muttake Ferdous">
+            <span class="sign-line">Al Muttake</span>
+            <span class="sign-label">Al Muttake Ferdous</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <strong>Al Muttake Ferdous · Civil Engineer</strong>
+      <span>Digital CV · Last updated <span id="year">2026</span></span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+      const sections = Array.from(document.querySelectorAll('main section[id]'));
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function () {
+          const open = nav.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', String(open));
+          menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        });
+        navLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            nav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Open navigation');
+          });
+        });
+      }
+
+      document.querySelectorAll('[data-print]').forEach(function (button) {
+        button.addEventListener('click', function () { window.print(); });
+      });
+
+      if ('IntersectionObserver' in window && sections.length) {
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            const active = document.querySelector('.nav-link[href="#' + entry.target.id + '"]');
+            if (!active) return;
+            navLinks.forEach(function (link) { link.classList.remove('active'); });
+            active.classList.add('active');
+          });
+        }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+        sections.forEach(function (section) { observer.observe(section); });
+      }
+
+      const year = document.getElementById('year');
+      if (year) year.textContent = String(new Date().getFullYear());
+    }());
+  </script>
+</body>
+</html>
